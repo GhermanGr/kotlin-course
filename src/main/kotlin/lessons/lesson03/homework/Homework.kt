@@ -25,7 +25,7 @@ private var partnerAgreements: String = "Contact information and agreements with
 var eventInProgress: Boolean = true
 
 // 9. Список спонсоров
-var sponsortList: List<String> = listOf("sponsorOne", "sponsorTwo")
+var sponsorList: List<String> = listOf("sponsorOne", "sponsorTwo")
 
 // 10. Бюджет мероприятия
 private var eventBudget: String = "General event budget information"
@@ -40,7 +40,7 @@ private var logisticsInfo: String = "Info on logistics and coordination"
 var teamNumber: Byte = 14
 
 // 14. Перечень задач
-// error private taskList: List<String> = listOf("taskrOne", "taskTwo")
+private var taskList: List<String> = listOf("taskrOne", "taskTwo")
 
 // 15. План эвакуации (зависит от места проведения мероприятия, которое может смениться)
 var evacuationPlan: String = "Evacuation plan" +
@@ -52,7 +52,7 @@ private var availableEquipmentList: List<String> = listOf("equipmentOne", "equip
 private var freeEquipmentList: List<String> = listOf("equipmentOne", "equipmentTwo")
 
 // 18. График питания участников (зависит от поставщика питания, определяемого за неделю до начала)
-// error lateinit var mealSchedule: String = "Meal schedule"
+lateinit var mealSchedule: String
 
 // 19. План мероприятий на случай сбоев
 private var emergencyEventPlan: String = "Emergency event plan"
@@ -73,7 +73,7 @@ private var currentVenueTempCelcius: Byte = 22
 private var networkPerformanceMetrics: String = "Network performance metrics"
 
 // 25. Регулятор скорости интернета (понижающий коэффициент, например 0.5)
-// error private var internetSpeedRugulator: Float = 0.5
+private var internetSpeedRugulator: Float = 0.5f
 
 // 26. Уровень освещения
 private var currentLightingLevel: String = "Strong"
@@ -91,16 +91,16 @@ var emergencyPlans: String = "Emergency plans"
 private val eventRegistrationNumber: String = "#10124o1fo10f1"
 
 // 31. Максимально допустимый уровень шума в помещении хакатона. (обосновано единым законодательством)
-// error val allowedNoiseLevel: Float = 140.0
+val allowedNoiseLevel: Float = 140.0f
 
 // 32. Индикатор превышения уровня шума в помещениях (превышен или не превышен в данный момент)
 var allowedNoiseLevelExceeded: Boolean = false
 
 // 33. План взаимодействия с прессой
-// error private pressManagementPlan: String = "Press management plan"
+private var pressManagementPlan: String = "Press management plan"
 
 // 34. Детальная публичная информация о проектах каждой команды, сбор данных включает в себя компиляцию кода и сбор статистики прогона автоматизированных проверок.
-// error lateinit var detailedTeamProjectInfo: String = "Detailed team project info"
+lateinit var detailedTeamProjectInfo: String
 
 // 35. Статус получения всех необходимых разрешений для проведения мероприятия
 var eventPermissionStatus: Boolean = true
@@ -112,7 +112,7 @@ private var specialEquipmentAvailability: Boolean = true
 var partnerList: List<String> = listOf("partnerOne", "partnerTwo")
 
 // 38. Отчет, включающий фотографии, видео и отзывы, генерируется и становится доступен после завершения мероприятия.
-// error lateinit var eventReport: String = "Event report"
+lateinit var eventReport: String
 
 // 39. Внутренние правила распределения призов
 private var awardRules: String = "Awsrd rules"
@@ -127,13 +127,13 @@ private val emergencyContacts: String = "Emergency contacts"
 var disabledPartisipantsRules: String = "Disabled participants rules"
 
 // 43. Общее настроение участников (определяется опросами)
-// error lateinit private var moodFeedback: Float = 0.0
+private lateinit var moodFeedback: String
 
 // 44. Подробный план хакатона, включающий время и содержание каждого сегмента, инициализируется непосредственно перед началом мероприятия, так как зависит от фактического состава команд и взятых в работу задач.
-// error lateinit var evenDetailedPlan: String = "Event Detailed Plan"
+lateinit var evenDetailedPlan: String
 
 // 45. Имя знаменитого специального гостя, которое будет объявлено за день до мероприятия, но в момент инициализации неизвестно.
-// error lateinit var celebrityName: String = "The name of the surprise celebrity"
+lateinit var celebrityName: String
 
 // 46. Максимальное количество людей, которое может вместить место проведения. (зависит от места проведения, которое может меняться)
 var maxVenueCapacity: Int = 2000
